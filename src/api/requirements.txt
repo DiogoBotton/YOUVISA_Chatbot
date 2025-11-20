@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+pydantic
+python-multipart
+numpy
+pypdf
+python-dotenv
+
+langchain
+langchain-core
+langchain-community
+langchain-ollama
+langchain-openai
+langchain-huggingface
+langchain_chroma

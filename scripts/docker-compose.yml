@@ -1,0 +1,14 @@
+services:
+  api:
+    build:
+      context: ../src # Configura o contexto, no caso, volta pra pasta raiz, e entra na "/src"
+      dockerfile: api/Dockerfile # A partir do contexto, indica o caminho até o Dockerfile
+    ports:
+      - "80:80"
+
+  front:
+    build:
+      context: ../src
+      dockerfile: front/Dockerfile
+    ports:
+      - "8501:8501"
