@@ -3,6 +3,8 @@ services:
     build:
       context: ../src # Configura o contexto, no caso, volta pra pasta raiz, e entra na "/src"
       dockerfile: api/Dockerfile # A partir do contexto, indica o caminho até o Dockerfile
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY} # Passa a variável de ambiente do host para o container
     ports:
       - "80:80"
 
