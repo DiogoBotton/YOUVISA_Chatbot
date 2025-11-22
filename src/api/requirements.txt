@@ -5,11 +5,11 @@ python-multipart
 numpy
 pypdf
 python-dotenv
+bs4
 
 langchain
 langchain-core
 langchain-community
 langchain-ollama
 langchain-openai
-langchain-huggingface
 langchain_chroma

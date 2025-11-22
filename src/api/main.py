@@ -1,6 +1,11 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from routers import predicts
+from routers import chatbot
+from dotenv import load_dotenv
+import os
+load_dotenv()
+
+os.environ['OPENAI_API_KEY'] = os.getenv("OPENAI_API_KEY")
 
 app = FastAPI(
     title="FarmTech API",
@@ -16,4 +21,4 @@ app.add_middleware(
     allow_headers=['*']
 )
 
-app.include_router(predicts.router)
+app.include_router(chatbot.router)
