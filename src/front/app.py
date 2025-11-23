@@ -2,10 +2,11 @@ import streamlit as st
 from langchain_core.messages import AIMessage, HumanMessage
 import requests
 from enums import MessageType
+import os
 
-API_URL = "http://localhost:8000"
+API_URL = os.getenv("API_URL", "http://localhost:8000")
 
-# Configurações do Streamlit
+# Configurações
 st.set_page_config(page_title="Seu assistente virtual YOUVISA 🤖", page_icon="🤖")
 st.title("Seu assistente virtual YOUVISA 🤖")
 

@@ -12,6 +12,7 @@ from langchain_core.messages import BaseMessage
 import os
 from datetime import datetime
 
+ollama_url = os.getenv("OLLAMA_HOST", "http://localhost:11434")
 file_paths = []
 url_paths = (
     "https://youvisa.com.br", 
@@ -101,7 +102,8 @@ def config_retriever(files: List[str] = file_paths,
     
     # Embeddings
     ollama_embedding = OllamaEmbeddings(
-        model=emb_model_name
+        model=emb_model_name,
+        base_url=ollama_url
     )
     
     # Armazenamento
