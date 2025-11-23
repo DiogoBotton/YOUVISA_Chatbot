@@ -43,7 +43,7 @@ O projeto tem como objetivo o desenvolvimento de um chatbot inteligente baseado 
 
 ### Arquitetura da solução
 
-![Arquitetura](assets/fluxograma-arquitetura.png)
+![Arquitetura](assets/fluxograma-arquitetura.jpg)
 
 A arquitetura é composta pelos seguintes componentes:
 
